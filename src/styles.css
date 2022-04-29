@@ -1,4 +1,7 @@
+body {
+  margin: 0 10%;
+  background-color: black;
+}
 .App {
-  font-family: sans-serif;
-  text-align: center;
+  background-color: red;
 }
