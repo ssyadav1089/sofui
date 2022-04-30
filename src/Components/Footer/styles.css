@@ -3,12 +3,12 @@
   padding-top: 25px;
 }
 
-.dark {
+.dark .footer {
   background-color: #232629;
   color: white;
 }
-.light {
-  background-color: white;
+.light .footer {
+  background-color: rgb(190, 188, 188);
 }
 
 .socials {

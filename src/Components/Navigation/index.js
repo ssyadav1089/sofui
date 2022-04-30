@@ -1,16 +1,17 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
-
+import { connect } from "react-redux";
 import Form from "react-bootstrap/Form";
 
+import { updateTheme } from "../../redux/Theme/actions";
 import { ReactComponent as Logo } from "../../assets/Logo.svg";
 
 import "./styles.css";
 
-export default class Navigation extends Component {
+class Navigation extends Component {
   render() {
     return (
-      <div className="dark">
+      <div className={this.props.theme}>
         <nav className="navbar navbar-expand-lg navbar-light bs-md">
           <div className="header-brand-div">
             <Link className="navbar-brand" to="/">
@@ -33,7 +34,7 @@ export default class Navigation extends Component {
                 type="switch"
                 id="custom-switch"
                 className="theme-switch"
-                // label="Check this switch"
+                onClick={() => this.props.updateTheme(this.props.theme)}
               />
               <span>light</span>
             </div>
@@ -55,3 +56,17 @@ export default class Navigation extends Component {
     );
   }
 }
+
+function mapStateToProps(state) {
+  return { theme: state.theme };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    updateTheme: (theme) => {
+      return dispatch(updateTheme(theme));
+    }
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Navigation);
