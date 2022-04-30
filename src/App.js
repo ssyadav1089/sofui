@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./Container/Home";
 import Header from "./Components/Header";
-// import Footer from "./Components/Footer";
+import Footer from "./Components/Footer";
 
 import "./styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -20,7 +20,7 @@ export default class App extends React.Component {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<Home />} />
           </Routes>
-          {/* <Footer /> */}
+          <Footer />
         </div>
       </BrowserRouter>
     );
