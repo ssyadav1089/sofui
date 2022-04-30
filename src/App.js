@@ -11,16 +11,18 @@ export default class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="App">
-          <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/for-teams" element={<ForTeams />} />
-          </Routes>
-          <Footer />
+        <Header />
+        <div className="dark">
+          <div className="App">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/products" element={<Products />} />
+              <Route path="/for-teams" element={<ForTeams />} />
+            </Routes>
+          </div>
         </div>
+        <Footer />
       </BrowserRouter>
     );
   }

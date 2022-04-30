@@ -7,7 +7,7 @@ import "./styles.css";
 export default class Footer extends Component {
   render() {
     return (
-      <div className="footer">
+      <div className="footer dark">
         <div className="socials">
           <div className="social-item">
             <a href="https://github.com/" target="_blank" rel="noreferrer">

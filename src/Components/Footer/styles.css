@@ -1,8 +1,14 @@
 .footer {
   min-height: 100px;
+  padding-top: 25px;
+}
+
+.dark {
   background-color: #232629;
   color: white;
-  padding-top: 25px;
+}
+.light {
+  background-color: white;
 }
 
 .socials {

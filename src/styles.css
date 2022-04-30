@@ -1,7 +1,19 @@
 body {
   margin: 0 10%;
-  background-color: black;
 }
+
 .App {
-  background-color: red;
+  min-height: 200px;
+  padding: 10px 20px;
+  /* min-height: calc(100% - 260px); */
+}
+
+.dark .App {
+  background-color: black;
+  color: white;
+}
+
+.light .App {
+  background-color: white;
+  color: black;
 }
