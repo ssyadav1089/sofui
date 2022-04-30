@@ -1,5 +1,8 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
+
+import Form from "react-bootstrap/Form";
+
 import { ReactComponent as Logo } from "../../assets/Logo.svg";
 
 import "./styles.css";
@@ -13,15 +16,25 @@ export default class Navigation extends Component {
             <Logo className="full-logo" />
           </Link>
           <div className="navigation">
-            <Link to="/" className="navigation--item">
+            <Link to="/about" className="navigation--item">
+              About
+            </Link>
+            <Link to="/products" className="navigation--item">
               Products
             </Link>
-            <Link to="/about" className="navigation--item">
-              Customers
+            <Link to="/for-teams" className="navigation--item">
+              For Teams
             </Link>
-            <Link to="/use-cases" className="navigation--item">
-              Use cases
-            </Link>
+          </div>
+          <div className="theme-switch-container">
+            <span className="dark">Dark</span>
+            <Form.Check
+              type="switch"
+              id="custom-switch"
+              className="theme-switch"
+              // label="Check this switch"
+            />
+            <span className="dark">light</span>
           </div>
         </div>
         <div className="header-search-div">
