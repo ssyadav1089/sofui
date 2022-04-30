@@ -1,6 +1,6 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Home from "./Container/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { Products } from "./Container";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 
@@ -13,12 +13,11 @@ export default class App extends React.Component {
       <BrowserRouter>
         <div className="App">
           <Header />
-          <h2>Start editing to see some magic happen!</h2>
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<Home />} />
+            <Route path="/" element={<div> hello </div>} />
+            {/* <Route path="/" element={<Products />} /> */}
+            {/* <Route path="/about" element={<Home />} />
+            <Route path="/about" element={<Home />} /> */}
           </Routes>
           <Footer />
         </div>

@@ -7,7 +7,7 @@ import "./styles.css";
 export default class Navigation extends Component {
   render() {
     return (
-      <nav className="navbar fixed-top navbar-expand-lg navbar-light bs-md">
+      <nav className="navbar navbar-expand-lg navbar-light bs-md">
         <div className="header-brand-div">
           <Link className="navbar-brand" to="/">
             <Logo className="full-logo" />
@@ -16,10 +16,10 @@ export default class Navigation extends Component {
             <Link to="/" className="navigation--item">
               Products
             </Link>
-            <Link to="/" className="navigation--item">
+            <Link to="/about" className="navigation--item">
               Customers
             </Link>
-            <Link to="/" className="navigation--item">
+            <Link to="/use-cases" className="navigation--item">
               Use cases
             </Link>
           </div>
