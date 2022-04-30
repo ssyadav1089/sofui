@@ -48,8 +48,8 @@
 .navbar-brand {
   margin-left: 10px;
   margin-right: 0;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 0;
+  padding-right: 5px;
 }
 
 .navbar-brand:hover {
@@ -64,11 +64,11 @@
 .header-search-div {
   display: flex;
   justify-content: flex-end;
-  margin-right: 20px;
+  margin-right: 5px;
 }
 
 .theme-switch-container {
-  margin-left: 40px;
+  margin-left: 2px;
   display: flex;
 }
 
