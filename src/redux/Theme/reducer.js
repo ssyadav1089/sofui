@@ -1,8 +1,6 @@
 import { UPDATE_THEME } from "./types";
 
-const INITIAL_STATE = {
-  theme: "dark"
-};
+const INITIAL_STATE = "dark";
 
 const reducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
